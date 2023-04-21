@@ -27,12 +27,23 @@ console.log(`basket array: ${basket}`);
 // - Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
-
+function listItems(){
+    for(let i=0; i<basket.length; i++){
+    console.log('in for loop:', basket[i]);
+    }
+  }
+  // Call and test
+  (listItems());
   
 
 //   - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
-
+function empty(){
+    basket.length = 0;
+    console.log('The basket is now empty', basket);
+}
+// Call and test
+empty();
 
 
 

@@ -19,17 +19,16 @@ console.log('Adding penny (expect true)', addItem('penny'));
 console.log('Adding nickels (expect true)', addItem('nickel'));
 console.log('Adding dime (expect true)', addItem('dime'));
 console.log('Adding quarter (expect true)', addItem('quarter'));
+console.log(`basket is now: ${basket}`);
 
 
-
-console.log(`basket array: ${basket}`);
 
 // - Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
 function listItems(){
     for(let i=0; i<basket.length; i++){
-    console.log('in for loop:', basket[i]);
+    console.log('in for loop', basket[i]);
     }
   }
   // Call and test
@@ -40,7 +39,7 @@ function listItems(){
 //   - reset the `basket` to an empty array
 function empty(){
     basket.length = 0;
-    console.log('The basket is now empty', basket);
+    console.log('The basket is now empty:', basket);
 }
 // Call and test
 empty();
